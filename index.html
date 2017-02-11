@@ -3,10 +3,19 @@
 <p>This project is an example implementation addressing some of principles behind the SCS architecture and front-end integration.
 This project provides different service implementations (merely stubs without actual persistence implementation)
 that integrate in different scenarios appropriate for each specific problem domain.</p>
-<p>The service landscapes which aims to build an easy and simple to use ecommerce system involves a couple of systems
-like <a href="https://github.com/scs-commerce/order">ordering</a>, <a href="https://github.com/scs-commerce/product-list">product listing</a>
-and a <a href="https://github.com/scs-commerce/landing-page">landing page</a> which reintegrates the different domains.</p>
-<p>Accompanying to the service repositories, an integration repository is available, that contains a configuration and a docker setup for
+<p>For further information about the general topic of SCS and front-end integration you may want to take a look at</p>
+<ul>
+<li><a href="http://www.scs-architecture.com">scs-architecture.com</a></li>
+<li><a href="https://www.innoq.com/de/podcast/025-scs-frontend-integration/">frond-end integration and SCS - 01</a> (german)</li>
+<li><a href="https://www.innoq.com/de/podcast/026-scs-frontend-integration-teil-2/">frond-end integration and SCS - 02</a> (german)</li>
+</ul>
+<p>The service landscapes which aims to build an easy and simple to use ecommerce system involves a couple of systems:</p>
+<ul>
+<li><a href="https://github.com/scs-commerce/order">ordering</a></li>
+<li><a href="https://github.com/scs-commerce/product-list">product listing</a></li>
+<li><a href="https://github.com/scs-commerce/landing-page">landing page</a></li>
+</ul>
+<p>Accompanying to the service repositories, an <a href="https://github.com/scs-commerce/integration">integration</a> repository is available, that contains a configuration and a docker setup for
 running an nginx web server, that serves as application server as well as caching proxy.</p>
 <h2>Information Architecture</h2>
 <p>To have a little structure about how we want to recombine certain information, we should think about categorizing our
