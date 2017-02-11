@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"/><title>SCS Commerce</title><link rel="stylesheet" href="./index.css"/></head><body><div class="container"><h2>Intro</h2>
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"/><title>SCS Commerce</title><link rel="stylesheet" href="./github-gist.css"/><link rel="stylesheet" href="./index.css"/></head><body><div class="container"><h2>Intro</h2>
 <p>This project is an example implementation addressing some of principles behind the SCS architecture and front-end integration.
 This project provides different service implementations (merely stubs without actual persistence implementation)
 that integrate in different scenarios appropriate for each specific problem domain.</p>
@@ -13,15 +13,15 @@ different information types. By splitting our system into several pieces we may 
 to share or combine content of our systems back again.</p>
 <h2>Running the demo setup</h2>
 <ol start="0">
-<li>pre-requisites</li>
+<li><strong>pre-requisites</strong></li>
 </ol>
 <ul>
 <li><a href="https://docs.docker.com/engine/installation/">install docker</a></li>
 </ul>
 <ol>
-<li>checkout the scs-commerce repositories</li>
+<li><strong>checkout the scs-commerce repositories</strong></li>
 </ol>
-<pre><code>mkdir scs-commerce
+<pre><code class="language-shell">mkdir scs-commerce
 cd ./scs-commerce
 git clone git@github.com:scs-commerce/landing-page.git
 git clone git@github.com:scs-commerce/product-list.git
@@ -29,15 +29,15 @@ git clone git@github.com:scs-commerce/order.git
 git clone git@github.com:scs-commerce/integration.git
 </code></pre>
 <ol start="2">
-<li>build integration project</li>
+<li><strong>build integration project</strong></li>
 </ol>
-<pre><code>cd ./integration
+<pre><code class="language-shell">cd ./integration
 docker-compose build
 docker-compose up
 </code></pre>
 <ol start="3">
-<li>visit landing page</li>
+<li><strong>visit landing page</strong></li>
 </ol>
-<pre><code>open http://localhost
+<pre><code class="language-shell">open http://localhost
 </code></pre>
-</div></body></html>
+</div><script src="./highlight.pack.js"></script><script>hljs.initHighlightingOnLoad();</script></body></html>
