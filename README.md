@@ -1,3 +1,7 @@
+---
+title: SCS Commerce
+---
+
 ## Intro
 
 This project is an example implementation addressing some of principles behind the SCS architecture and front-end integration. This project provides different service implementations (merely stubs without actual persistence implementation) that integrate in different scenarios appropriate for each specific problem domain.
