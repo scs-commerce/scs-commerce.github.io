@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"/><title>SCS Commerce</title><link rel="stylesheet" href="./github-gist.css"/><link rel="stylesheet" href="./index.css"/></head><body><div class="container"><h1>SCS Architecture</h1><a href="https://github.com/scs-commerce/">Repository at Github</a><div class="editorial-content"><h2>Intro</h2>
+<h2>Intro</h2>
 <p>This project is an example implementation addressing some of principles behind the SCS architecture and front-end integration.
 This project provides different service implementations (merely stubs without actual persistence implementation)
 that integrate in different scenarios appropriate for each specific problem domain.</p>
@@ -29,44 +29,3 @@ that can be updated by marking articles at the product-list.</p>
 </ul>
 <p>Accompanying to the service repositories, an <a href="https://github.com/scs-commerce/integration">integration</a> repository is available, that contains a configuration and a docker setup for
 running an nginx web server, that serves as application server as well as caching proxy.</p>
-<h2>Information Architecture</h2>
-<p>To have a little guidance in how to recombine certain information, we should think about categorizing our
-different information types. By splitting our system into several pieces we may end up with a few scenarios of how
-to share or combine content of our systems back again.</p>
-<h3>Scenario 1 -</h3>
-<h2>Running the demo setup</h2>
-<ol start="0">
-<li><strong>pre-requisites</strong></li>
-</ol>
-<ul>
-<li><a href="https://docs.docker.com/engine/installation/">install docker</a></li>
-</ul>
-<ol>
-<li><strong>checkout the scs-commerce repositories</strong></li>
-</ol>
-<pre><code class="language-bash"># prepare base folder (can be named anything)
-mkdir scs-commerce
-cd ./scs-commerce
-
-# checkout services
-# for further details take a look at the single repositories
-# https://github.com/scs-commerce/
-git clone git@github.com:scs-commerce/landing-page.git
-git clone git@github.com:scs-commerce/product-list.git
-git clone git@github.com:scs-commerce/order.git
-git clone git@github.com:scs-commerce/integration.git
-</code></pre>
-<ol start="2">
-<li><strong>build integration project</strong></li>
-</ol>
-<pre><code class="language-bash">cd ./integration
-docker-compose build
-docker-compose up
-</code></pre>
-<ol start="3">
-<li><strong>visit landing page</strong></li>
-</ol>
-<pre><code class="language-bash">open http://localhost
-</code></pre>
-<p>Copyright 2017 @ Falk Hoppe | <a href="./LICENSE.txt">LICENSE</a></p>
-</div></div><script src="./highlight.pack.js"></script><script>hljs.initHighlightingOnLoad();</script></body></html>
