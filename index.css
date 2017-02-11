@@ -11,3 +11,12 @@ body {
 .editorial-content h2 {
   margin-top: 3rem;
 }
+.editorial-content pre {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.editorial-content pre .hljs {
+  border: 1px dashed #dcded9;
+  border-bottom: 5px solid #373737;
+  border-radius: 2px;
+}
