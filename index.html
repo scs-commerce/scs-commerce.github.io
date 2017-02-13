@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"/><title>SCS Commerce</title><link rel="stylesheet" href="./github-gist.css"/><link rel="stylesheet" href="./index.css"/></head><body><div class="container"><h1>SCS Architecture</h1><a href="https://github.com/scs-commerce/">Repository at Github</a><div class="editorial-content"><h2>Intro</h2>
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"/><title>SCS Commerce</title><link rel="stylesheet" href="./github-gist.css"/><link rel="stylesheet" href="./index.css"/></head><body><div class="container"><h1>SCS Architecture</h1><a href="https://github.com/scs-commerce/">Repository at Github</a>|<a href="https://github.com/orgs/scs-commerce/projects/1">Issues and Project Tracking</a><div class="editorial-content"><h2>Intro</h2>
 <p>This project is an example implementation addressing some of principles behind the SCS architecture and front-end integration.
 This project provides different service implementations (merely stubs without actual persistence implementation)
 that integrate in different scenarios appropriate for each specific problem domain.</p>
@@ -25,6 +25,11 @@ that integrate in different scenarios appropriate for each specific problem doma
 by scrolling down to the bottom of the page.</p>
 <p>Furthermore there a view to the shopping basket service is injected at the top of the landing page,
 that can be updated by marking articles at the product-list.</p>
+</li>
+<li>
+<p><a href="https://github.com/scs-commerce/assets">assets</a></p>
+<p>A centralized asset library, that contains central js and CSS components available to all domains.
+We load <a href="http://getbootstrap.com/">bootstap</a> CSS in beforehand so that it builds the base of our asset library.</p>
 </li>
 </ul>
 <p>Accompanying to the service repositories, an <a href="https://github.com/scs-commerce/integration">integration</a> repository is available, that contains a configuration and a docker setup for
@@ -53,6 +58,7 @@ cd ./scs-commerce
 git clone git@github.com:scs-commerce/landing-page.git
 git clone git@github.com:scs-commerce/product-list.git
 git clone git@github.com:scs-commerce/order.git
+git clone git@github.com:scs-commerce/assets.git
 git clone git@github.com:scs-commerce/integration.git
 </code></pre>
 <ol start="2">
