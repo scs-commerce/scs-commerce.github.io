@@ -15,16 +15,16 @@ that integrate in different scenarios appropriate for each specific problem doma
 <p>An order service, that at the moment just offers the possibility to add articles to a shopping basket.</p>
 </li>
 <li>
-<p><a href="https://github.com/scs-commerce/product-list">product lists</a></p>
+<p><a href="https://github.com/scs-commerce/products">product lists</a></p>
 <p>A list of generated products (just name and fake descriptions for now)</p>
 </li>
 <li>
 <p><a href="https://github.com/scs-commerce/landing-page">landing page</a></p>
 <p>A landing page, that combines its own static content with the content provided by the other services.</p>
-<p>In detail that means, that a list of products out of the product-list service is embedded, that is loaded page, by page,
+<p>In detail that means, that a list of products out of the products service is embedded, that is loaded page, by page,
 by scrolling down to the bottom of the page.</p>
 <p>Furthermore there a view to the shopping basket service is injected at the top of the landing page,
-that can be updated by marking articles at the product-list.</p>
+that can be updated by marking articles at the product list.</p>
 </li>
 <li>
 <p><a href="https://github.com/scs-commerce/assets">assets</a></p>
@@ -34,3 +34,4 @@ We load <a href="http://getbootstrap.com/">bootstap</a> CSS in beforehand so tha
 </ul>
 <p>Accompanying to the service repositories, an <a href="https://github.com/scs-commerce/integration">integration</a> repository is available, that contains a configuration and a docker setup for
 running an nginx web server, that serves as application server as well as caching proxy.</p>
+<p><img src="/images/overview.png" alt="architectural overview"></p>
