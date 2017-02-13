@@ -14,7 +14,10 @@ body {
   margin-top: 3rem;
 }
 .editorial-content img {
+  display: block;
   max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
 }
 .editorial-content pre {
   margin-top: 2rem;
